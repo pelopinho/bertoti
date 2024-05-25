@@ -51,3 +51,25 @@ Alguns exemplos de trade-offs:
            *O sistema de gestão de reservas de hotel deve ser fácil de usar* (requisito vago, impossibilita a definição de critérios claros para avaliar como ele seria "fácil de usar")
 
            EXEMPLO: Sistema de streaming de vídeo (Seguindo essa arquitetura, o sistema conta com microserviços necessários, cada um com a sua funcionalidade específica para proporcionar flexibilidade, escalabilidade e facilidade de manutenção, como autenticação e autorização, catálogo e reprodução de vídeos, recomendação de conteúdo, interação social, pagamentos e assinaturas, análise de dados e monitoramento. Logo, as aplicações interagiriam com esses serviços por meio de APIs, utilizando cada serviço conforme necessário).
+
+**ATIVIDADE 4** 
+
+**Arquitetura em Camadas (Layered Architecture)**
+
+**Camada de Apresentação (Presentation Layer)**
+Esta camada pode incluir uma interface gráfica ou uma API REST para interação com o usuário.
+
+**Camada de Aplicação (Application Layer)**
+Contém a lógica de negócios. Esta camada pode ser representada pela classe JogarLeagueOfLegends que gerencia a adição de usuários e partidas, além da associação de usuários às partidas.
+
+**Camada de Domínio (Domain Layer)**
+Contém as entidades de negócios. Inclui as classes CadastrarUsuario e LeagueOfLegends.
+
+**Camada de Persistência (Persistence Layer)**
+Gerencia a persistência dos dados. Embora o código atual não mostre como os dados são persistidos, é possível adicionar classes ou interfaces para gerenciar o armazenamento de usuários e partidas, por exemplo, usando um banco de dados. 
+
+**ATIVIDADE 5, 6, 7 (ANEXADAS NO GIT)**
+
+
+
+
