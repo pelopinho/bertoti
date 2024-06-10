@@ -10,8 +10,25 @@ Com base nos parágrafos em questão, a Engenharia de Software pode ser definida
 Alguns exemplos de trade-offs:
 
            1 - Desempenho x Consumo de dados: otimizar algoritmos para melhorar o desempenho pode resultar em maior consumo de recursos computacionais;
+
+                      **EXEMPLO: Imagine um aplicativo de navegação GPS que oferece duas opções de rota: uma otimizada para o menor tempo de viagem (alto desempenho) e outra otimizada para o menor consumo de dados (baixo consumo de recursos computacionais).**
+
+           **Alto Desempenho (Menor Tempo de Viagem):** O algoritmo calcula a rota mais rápida usando dados em tempo real sobre tráfego, acidentes e obras. Isso exige uma comunicação constante com servidores, resultando em maior consumo de dados.
+           **Baixo Consumo de Dados:** O algoritmo calcula a rota baseando-se apenas em dados estáticos (ex.: mapas pré-carregados) e não atualiza com informações de tráfego em tempo real. Isso economiza dados, mas pode resultar em tempos de viagem maiores.
+
+
            2 - Segurança x Usabilidade: exigir senhas mais complexas/autenticação de dois fatores aumenta o percentual de segurança de um software, porém também pode tornar o processo de login menos conveniente para o usuário;
+           **EXEMPLO: Considere um sistema de gerenciamento bancário online que deve equilibrar a segurança do login com a conveniência para os usuários.**
+
+           **Alta Segurança:** O sistema exige que os usuários configurem senhas complexas com caracteres especiais, números, letras maiúsculas e minúsculas, e habilitem a autenticação de dois fatores (2FA). Isso aumenta a segurança, mas pode ser considerado incômodo por alguns usuários que preferem um processo de login rápido e simples.
+           **Alta Usabilidade:** O sistema permite senhas simples e não exige 2FA, facilitando o login para os usuários. Isso melhora a usabilidade, mas compromete a segurança, tornando o sistema mais vulnerável a ataques.
+
            3 - Manutenção x Desempenho: adicionar uma camada de abstração para facilitar futuras mudanças e permitir configurações flexíveis pode tornar o código mais modular e fácil de manter, mas também pode resultar em um sistema mais complexo e exigir uma revisão intensa para implementar mudanças significativas.
+
+           **EXEMPLO: Imagine um aplicativo de e-commerce que precisa ser escalável e fácil de manter.
+
+           **Alta Manutenção (Facilidade de Manutenção):** O sistema é desenvolvido com uma arquitetura de microserviços, onde cada funcionalidade é encapsulada em um serviço separado que pode ser atualizado independentemente. Isso facilita a manutenção e atualização do sistema, mas pode introduzir overhead de comunicação entre serviços e aumentar a complexidade do sistema, impactando o desempenho.
+           **Alto Desempenho:** O sistema é desenvolvido como uma aplicação monolítica otimizada, onde todas as funcionalidades são integradas em um único código base. Isso pode oferecer melhor desempenho devido à menor latência na comunicação interna, mas torna o sistema mais difícil de manter e atualizar, já que qualquer mudança requer testes e deploy de toda a aplicação.
 
 
 **ATIVIDADE 3**
