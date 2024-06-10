@@ -87,6 +87,10 @@ Gerencia a persistência dos dados. Embora o código atual não mostre como os d
 
 **ATIVIDADE 5, 6, 7 (ANEXADAS NO GIT)**
 
+**ATIVIDADE 8**
+
+https://lucid.app/lucidchart/90809ac7-d976-4a26-bca8-3b20f50466dc/edit?viewport_loc=-1276%2C-2696%2C3328%2C1630%2C0_0&invitationId=inv_a5246d5d-b0c0-47e1-8789-9052f5813be4
+
 
 
 
