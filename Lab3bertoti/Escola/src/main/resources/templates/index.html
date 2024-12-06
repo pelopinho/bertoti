@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrícula</title>
+    <script src="https://unpkg.com/htmx.org@1.8.6"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="App.js" defer></script>
+</head>
+<body>
+<h1>Disciplinas disponíveis</h1>
+
+<div id="escola-list" hx-get="/escola" hx-trigger="load" hx-swap="innerHTML">
+</div>
+
+<h2>Adicionar Disciplina</h2>
+<form id="add-disciplina-form">
+    <label for="add-id">Id da Disciplina:</label>
+    <input type="text" id="add-id" name="id" placeholder="ID da disciplina" required>
+    <label for="add-nome-disciplina">Nome da Disciplina:</label>
+    <input type="text" id="add-nome-disciplina" name="nome" placeholder="Nome da Disciplina" required>
+    <button type="button" onclick="addDisciplina()">Adicionar</button>
+</form>
+
+<h2>Atualizar Disciplina</h2>
+<form id="update-disciplina-form">
+    <label for="update-id">Id da Disciplina:</label>
+    <input type="text" id="update-id" name="id" placeholder="ID da disciplina" required>
+    <label for="update-nome-disciplina">Novo Nome da Disciplina</label>
+    <input type="text" id="update-nome-disciplina" name="nome" placeholder="Novo Nome da Disciplina" required>
+    <button type="button" onclick="updateDisciplina()">Atualizar</button>
+</form>
+
+<h2>Remover Disciplina</h2>
+<form id="delete-disciplina-form">
+    <label for="delete-id">Id da Disciplina:</label>
+    <input type="text" id="delete-id" name="id" placeholder="ID da Disciplina" required>
+    <button type="button" onclick="deleteDisciplina()">Remover</button>
+</form>
+</body>
+</html>
